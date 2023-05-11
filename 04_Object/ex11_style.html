@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style</title>
+</head>
+<body>
+    <span id="spanTag">아래 버튼을 클릭하면 이 텍스트의 색깔과 크기가 변해요</span>
+    <br>
+    <button onclick="clickFunc()">이 버튼 클릭! 🐱‍👓</button>
+
+    <script>
+        // span 요소 가져오기
+        let spanTag = document.getElementById('spanTag');
+        spanTag = document.querySelector('span');
+        spanTag = document.querySelector('#spanTag')
+        console.log(spanTag);
+
+        // querySelector : CSS 선택자로 요소 검색
+        // querySelectorAll : CSS 선택자로 모든 요소 검색
+
+        // DOM 스타일 제어
+        // 요소.style.속성 = 값;
+
+        const clickFunc= () =>{
+            // 글자 크기 : 25px
+            spanTag.style.fontSize = '25px';
+            // 글자 색상 : tomato
+            spanTag.style.color = 'tomato';
+            // 글자 굵기 : 900
+            spanTag.style.fontWeight = '900'
+
+
+
+        }
+
+    </script>
+    
+</body>
+</html>

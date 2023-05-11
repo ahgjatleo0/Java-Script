@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX18_script_작성위치</title>
+    <!-- 외부 방식 : 외부의 js파일 안에 직접 작성 -->
+    <script defer src="./ex18_외부스크립트.js"></script>
+    <!-- 
+        async : HTML 로딩이 멈추지 않음
+        defer : HTML 로딩이 다 되고 나서 script 실행
+     -->
+
+</head>
+<body>
+
+    <!-- 내부 방식 : html 내부 script 태그 안에 직접 작성 -->
+    <script>
+        console.log('Hello World!');
+    </script>
+    <!-- 인라인 방식 : 태그에 직접 기능을 작성 -->
+    <button onmouseenter="console.log('마우스를 올리셨군요?')">M🐹USE</button>
+    
+</body>
+</html>
